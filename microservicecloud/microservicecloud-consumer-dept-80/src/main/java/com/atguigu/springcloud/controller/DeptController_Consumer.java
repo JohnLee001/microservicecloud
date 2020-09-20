@@ -19,8 +19,8 @@ public class DeptController_Consumer {
     /**
      * 访问的地址
      */
-    private static final String REST_URL="http://localhost:8001/dept";
-
+    //private static final String REST_URL="http://localhost:8001/dept";
+    private static final String REST_URL="http://MICROSERVICECLOUD-DEPT/dept";
     @RequestMapping(value="/consumer/dept/add")
     public boolean addDept(Dept dept){
         return restTemplate.postForObject(REST_URL,dept,Boolean.class);
